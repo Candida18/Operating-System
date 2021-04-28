@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "Enter the name of directory you want to create"
+read dir
+
+if [ -d $dir ]
+then
+        echo "Directory already exists"
+        exit 1
+else
+        mkdir $dir
+fi
+
+cd $dir
+sou=$(pwd)
+
+touch first.txt
+touch second.txt
+
+echo "Enter Dest"
+read des
+
+cp -R $sou $des
