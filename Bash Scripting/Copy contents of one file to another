@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo -n "Enter the source file's name : "
+read src
+
+echo -n "Enter the destination file's name : "
+read dest
+
+cp $src $dest
+status=$?
+
+if [ $status -eq 0 ]
+then
+        echo "File copied successfully! !"
+else
+        echo "File was not copied"
+fi
+
+
