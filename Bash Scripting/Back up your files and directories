@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Where are the files to be backuped"
+read backup_files
+
+echo "Where do you want to backup"
+read dest
+
+day=$(date +%A)
+hostname=$(hostname -s)
+
+archive_file="$hostname-$day.tgz"
+tar czf $dest/$archive_file $backup_files
+
+echo "Backup finished"
+ls -lh $dest
