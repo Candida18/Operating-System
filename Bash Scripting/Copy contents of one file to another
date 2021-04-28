@@ -1,4 +1,4 @@
-# Q. Write a Shell Script program to copy contents of one file to another.
+#Q. Write a Shell Script program to copy contents of one file to another.
 
 #!/bin/bash
 
