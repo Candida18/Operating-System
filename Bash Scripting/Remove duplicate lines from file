@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Enter the file : "
+read file
+
+if [ -f $file ]
+then
+        sort $file | uniq -c
+        sort $file | uniq > output.txt
+        echo "Success"
+else
+        echo "File Not Found"
+fi
