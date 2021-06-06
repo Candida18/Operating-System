@@ -3,8 +3,8 @@ int main()
 {
 	int p,res;
 	printf("\n------------------------------------------------------------------------------------------------\n");
-    printf("\n \t\t\t\t\tBanker's Algorithm \n");
-    printf("\n------------------------------------------------------------------------------------------------\n");
+    	printf("\n \t\t\t\t\tBanker's Algorithm \n");
+    	printf("\n------------------------------------------------------------------------------------------------\n");
 	printf("\n Enter the Number of Process : ");
 	scanf("%d",&p);
 	printf("\n Enter the Number of Resources : ");
